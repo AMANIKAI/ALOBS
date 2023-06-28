@@ -4,16 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alobsweb.com</title>
+    <title>grid-layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-  <h1>ALOBS PROFILE</h1>  
-  <br>
-  <div>
-    <p>This is a one stop information source</p>
-    <br>
-    <h3>How to source for information</h3>
-    <br>
-    <H4>Schedule of events</H4>
+<nav class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ALOBS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contact Us</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Our Services</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container overflow-hidden text-center mt-5">
+  <div class="row gy-5">
+    <div class="col-6 bg-danger">
+      <div class="p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed animi facilis quibusdam at pariatur alias nobis! Obcaecati tempora veniam quae. Aliquid numquam alias eveniet blanditiis amet assumenda pariatur dignissimos sit.
+        <img src="data:image/jpeg;base64,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" alt="">
+      </div>
+    </div>
+    <div class="col-6 bg-secondary">
+      <div class="p-3">Custom column padding</div>
+    </div>
+    <div class="col-6 bg-success">
+      <div class="p-3">Custom column padding</div>
+    </div>
+    <div class="col-6 bg-primary">
+      <div class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero temporibus laudantium aperiam, suscipit cumque necessitatibus saepe numquam dignissimos tenetur soluta consectetur dolor adipisci eaque ipsum, esse odit similique! Voluptatibus?</div>
+    </div>
+    <div class="col-6 bg-info">
+      <div class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero temporibus laudantium aperiam, suscipit cumque necessitatibus saepe numquam dignissimos tenetur soluta consectetur dolor adipisci eaque ipsum, esse odit similique! Voluptatibus?</div>
+    </div>
+    <div class="col-6 bg-light">
+      <div class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa libero temporibus laudantium aperiam, suscipit cumque necessitatibus saepe numquam dignissimos tenetur soluta consectetur dolor adipisci eaque ipsum, esse odit similique! Voluptatibus?
+        <img src="https://clipart-library.com/images/5iRrge6AT.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
