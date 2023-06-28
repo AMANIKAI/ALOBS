@@ -1,4 +1,12 @@
+body{
+    background-color: azure;
+}
+
 img{
-    width: 100%;
-    height: auto;
+    width: 150mm;
+    height: 80mm;
+}
+
+h1{
+    text-align: center;
 }
